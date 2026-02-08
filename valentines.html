@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine’s Day</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1500&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 50%;
+      border: 5px solid #ffb6c1;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #e63946;
+      margin-bottom: 15px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+    }
+
+    .message {
+      color: #333;
+      font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+      line-height: 1.8;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .signature {
+      margin-top: 30px;
+      text-align: right;
+      font-weight: 600;
+      color: #e63946;
+    }
+
+    /* Tablet */
+    @media (max-width: 768px) {
+      .card {
+        padding: 25px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px;
+      }
+
+      .message {
+        text-align: center;
+      }
+
+      .signature {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="image-container">
+      <!-- Replace image link -->
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80" alt="Valentine Image">
+    </div>
+
+    <h1>Happy Valentine’s Day ❤️</h1>
+
+    <div class="message">
+      <p>
+        This message is a simple reminder of how special you are.  
+        Today isn’t just about chocolates, flowers, or hearts—it’s about
+        appreciating the moments, memories, and emotions that make life
+        warmer and brighter.
+      </p>
+      <br>
+      <p>
+        You bring kindness, laughter, and meaning in ways that words can’t
+        fully describe. Even in ordinary days, your presence turns moments
+        into something unforgettable. This page exists just to say that
+        you are valued, remembered, and cherished.
+      </p>
+      <br>
+      <p>
+        May this Valentine’s Day remind you that love comes in many forms—
+        in patience, in support, in understanding, and in simply being
+        there. No matter where life takes us, may warmth and happiness
+        always find their way back to you.
+      </p>
+    </div>
+
+    <div class="signature">
+      — raj :)
+    </div>
+  </div>
+
+</body>
+</html>
